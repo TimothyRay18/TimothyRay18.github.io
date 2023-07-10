@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timothy's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+
+  <body>
+    <div>
+      <!--The nav bar-->
+      <nav>
+        <h3 class="logo pointer">Timothy's Portfolio</h3>
+        <div>
+          <ul id="desk-list">
+            <li><a class="active pointer" href="#bio">Portoflio</a></li>
+            <li><a class="pointer" href="#about-me">About</a></li>
+            <li><a class="pointer" href="#contact">Contact</a></li>
+          </ul>
+          <img
+            class="pointer"
+            id="Union-menu"
+            src="./assets/Union.svg"
+            alt="Union"
+          />
+        </div>
+      </nav>
+      <div id="menu-navs" class="hidden">
+        <div><span id="nav-button-close">&#x2715;</span></div>
+        <ul>
+          <li><a href="#bio">Portoflio</a></li>
+          <li><a href="#projects">About</a></li>
+          <li><a href="#about-me">Contact</a></li>
+        </ul>
+      </div>
+      <!--The main section-->
+      <main>
+        <section id="bio">
+          <h1>I'm Timothy Ray to see you!</h1>
+          <p>
+            A career in Information Technology, specifically in the areas of machine learning and software
+            development, that will optimally utilize python and other relevant programming skill as well as
+            analytical, time-management, logical, problem solving, and leadership.
+          </p>
+
+          <a class="pointer btn-action">LET'S CONNECT</a>
+
+          <ul class="socials">
+            <!-- <li class="pointer">
+              <img src="./assets/twitter.svg" alt="Twitter" />
+            </li> -->
+            <li class="pointer">
+              <a href="https://www.linkedin.com/in/timothyray1802/"><img src="./assets/Linkedin.svg" alt="Linkedin" /><a>
+            </li>
+            <li class="pointer">
+              <a href="https://github.com/TimothyRay18"><img src="./assets/github.svg" alt="Github" /></a>
+            </li>
+            <li class="pointer">
+              <a href="https://www.instagram.com/timothyray_/"><img src="./assets/icons8-instagram.svg" alt="Instagram"/></a>
+            </li>
+            <li class="pointer">
+              <a href="https://mail.google.com/mail/u/0/?fs=1&amp;to=timothy.ray1802@gmail.com&amp;tf=cm"><img src="./assets/icons8-gmail-24.png" alt="Gmail"/></a>
+            </li>
+          </ul>
+        </section>
+      </main>
+      <!--Project section-->
+
+      <div id="pop-up" class="hidden" >
+        <div>
+          <div id="popup-head">
+            <h2>Final Static Fashion</h2>
+            <span>&#x2715;</span>
+          </div>
+
+          <ul>
+            <li>Java</li>
+            <li>Full-Stack Dev</li>
+            <li>2020</li>
+          </ul>
+          <div id="popup-img">
+            <img src="../assets/Final Static Fashion.png" alt="Final Static Fashion" />
+          </div>
+
+          <div id="popup-details">
+            <p>
+              A daily selection of privately personalized reads; no accounts or
+              sign-ups required. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Explicabo delectus facere unde sapiente, quasi
+              corporis aspernatur facilis asperiores pariatur in porro!
+              Sapiente, esse? Aspernatur nesciunt quod possimus.
+            </p>
+
+            <div>
+              <menu>
+              </menu>
+              <div id="popup-demo">
+                <a class="btn-action">
+                  <span>
+                    See Live
+                  </span>
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 18 18"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2 9C2 5.13401 5.13401 2 9 2C9.55229 2 10 1.55228 10 1C10 0.447715 9.55229 0 9 0C4.02944 0 0 4.02944 0 9C0 13.9706 4.02944 18 9 18C13.9706 18 18 13.9706 18 9C18 8.44772 17.5523 8 17 8C16.4477 8 16 8.44772 16 9C16 12.866 12.866 16 9 16C5.13401 16 2 12.866 2 9ZM13 0C12.4477 0 12 0.447715 12 1C12 1.55228 12.4477 2 13 2H14.5858L8.29289 8.29289C7.90237 8.68342 7.90237 9.31658 8.29289 9.70711C8.68342 10.0976 9.31658 10.0976 9.70711 9.70711L16 3.41421V5C16 5.55228 16.4477 6 17 6C17.5523 6 18 5.55228 18 5V1C18 0.447715 17.5523 0 17 0H13Z"
+                      fill="#6070FF"
+                    />
+                  </svg>
+                </a>
+                <a class="btn-action">
+                  <span>
+                    See Source
+                  </span>
+                  <svg
+                    width="18"
+                    height="20"
+                    viewBox="0 0 18 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.9989 7.46114C17.9989 6.32124 17.6329 5.25043 16.9342 4.31779C17.2004 3.41969 17.2669 2.27979 17.2004 0.967185C17.1671 0.414508 16.7345 0 16.2022 0C15.9028 0 13.3741 0.0345423 11.9101 1.38169C10.6458 1.1399 9.31495 1.1399 8.01736 1.38169C6.58667 0.0345423 4.05802 0 3.7253 0C3.19296 0 2.76042 0.414508 2.72715 0.967185C2.62734 2.27979 2.72715 3.41969 2.99333 4.31779C2.29462 5.28497 1.92863 6.35579 1.92863 7.46114C1.92863 9.8791 3.7253 12.0553 6.45358 13.0915C6.35377 13.2988 6.28723 13.5406 6.22068 13.7824C3.32604 13.4715 1.9619 10.7427 1.89536 10.639C1.66246 10.1209 1.06357 9.91364 0.56449 10.19C0.0654144 10.4318 -0.134216 11.0535 0.131958 11.5717C0.198501 11.7444 2.02845 15.4404 6.05432 15.8549V18.9637C6.05432 19.5509 6.48686 20 7.05248 20H12.875C13.4406 20 13.8732 19.5509 13.8732 18.9637V14.8532C13.8732 14.2314 13.7401 13.6442 13.5072 13.1261C16.2022 12.0553 17.9989 9.91364 17.9989 7.46114Z"
+                      fill="#6070FF"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="projects">
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/Final Static Fashion.png" alt="Final Static Fashion" />
+          </div>
+
+          <div class="details">
+            <h2>Final Static Fashion</h2>
+            <ul>
+              <li>Full-Stack Dev</li>
+              <li>2020</li>
+            </ul>
+            <p>
+              An e-commerce app that sells a wide variety of fashion attributes
+            </p>
+            <menu>
+              <li>Java Swing</li>
+            </menu>
+            <a class="btn-action">See Project</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/Grimoire.png" alt="Grimoire" />
+          </div>
+
+          <div class="details">
+            <h2>Grimoire</h2>
+            <ul>
+              <li>FULL-Stack Dev</li>
+              <li>2022</li>
+            </ul>
+            <p>
+              Grimoire is a note taking app with the ability to mix other media to be noted (audio, image, file).
+            </p>
+            <menu>
+              <li>Kotlin</li>
+              <li>Java</li>
+            </menu>
+            <a class="btn-action">See Project</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/Foodut.png" alt="Foodut" />
+          </div>
+
+          <div class="details">
+            <h2>Foodut</h2>
+            <ul>
+              <li>Back End Developer</li>
+              <li>2022</li>
+            </ul>
+            <p>
+              Buy and sell a variety of delicious snack with ease. Connect with snack enthusiasts and satisfy your cravings. This app using Golang for the backend and Vue.js for the frontend.
+            </p>
+            <menu>
+              <li>HTML</li>
+              <li>Vue.js</li>
+              <li>Golang</li>
+              <li>JavaScript</li>
+            </menu>
+            <a class="btn-action">See Project</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/mainGUI.png" alt="Cryptocurrency Forecasting" />
+          </div>
+
+          <div class="details">
+            <h2>Cryptocurrency Forecasting</h2>
+            <ul>
+              <li>Full-Stack Dev</li>
+              <li>2023</li>
+            </ul>
+            <p>
+              A website that forecasts cryptocurrency closing price using 25 hour of historical data.
+            </p>
+            <menu>
+              <li>HTML</li>
+              <li>Python</li>
+              <li>Tensorflow</li>
+              <li>JavaScript</li>
+            </menu>
+            <a class="btn-action">See Project</a>
+          </div>
+        </div>
+      </div>
+      </section>
+      <section id="about-me">
+        <div id="about-myself">
+          <h3>About mySelf</h3>
+          <p>
+            A career in Information Technology, specifically in the areas of machine learning and software
+            development, that will optimally utilize python and other relevant programming skill as well as
+            analytical, time-management, logical, problem solving, and leadership.
+          </p>
+
+          <a class="pointer btn-action">LET'S CONNECT</a>
+
+          <ul class="socials">
+            <li class="pointer">
+              <a href="https://www.linkedin.com/in/timothyray1802/"><img src="./assets/Linkedin.svg" alt="Linkedin" /><a>
+            </li>
+            <li class="pointer">
+              <a href="https://github.com/TimothyRay18"><img src="./assets/github.svg" alt="Github" /></a>
+            </li>
+            <li class="pointer">
+              <a href="https://www.instagram.com/timothyray_/"><img src="./assets/icons8-instagram.svg" alt="Instagram"/></a>
+            </li>
+            <li class="pointer">
+              <a href="https://mail.google.com/mail/u/0/?fs=1&amp;to=timothy.ray1802@gmail.com&amp;tf=cm"><img src="./assets/icons8-gmail-24.png" alt="Gmail"/></a>
+            </li>
+          </ul>
+          <a class="btn btn-action">Get my resume</a>
+        </div>
+
+        <div id="about-myself-2">
+          <ul id="lfs-section">
+            <li id="languages">
+              <h4>
+                Languages
+                <img src="./assets/down.svg" alt="Arrow" />
+              </h4>
+              <ul>
+                <li>
+                  <img src="./assets/js.png" alt="js" />
+                  <h6>JavaScript</h6>
+                </li>
+                <li>
+                  <img src="./assets/html5.png" alt="html" />
+                  <h6>HTML</h6>
+                </li>
+                <li>
+                  <img src="./assets/css3.png" alt="css" />
+                  <h6>CSS</h6>
+                </li>
+                <li>
+                  <img src="./assets/icons8-java-48.png" alt="java" />
+                  <h6>Java</h6>
+                </li>
+                </li>
+                <li>
+                  <img src="./assets/icons8-kotlin-48.png" alt="kotlin" />
+                  <h6>Kotlin</h6>
+                </li>
+                <li>
+                  <img src="./assets/icons8-php-48.png" alt="php" />
+                  <h6>PHP</h6>
+                </li>
+                <li>
+                  <img src="./assets/icons8-python-48.png" alt="python" />
+                  <h6>Python</h6>
+                </li>
+                </li>
+                <li>
+                  <img src="./assets/icons8-golang-48.png" alt="golang" />
+                  <h6>Golang</h6>
+                </li>
+              </ul>
+            </li>
+            <li id="frameworks">
+              <h4>
+                Frameworks
+                <img src="./assets/down.svg" alt="Arrow" />
+              </h4>
+              <ul></ul>
+            </li>
+            <li id="skills">
+              <h4>
+                Skills
+                <img src="./assets/down.svg" alt="Arrow" />
+              </h4>
+              <ul></ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I'd love
+            to help with it
+          </p>
+        </div>
+
+        <form action="https://formspree.io/f/mlezyjdr" method="post">
+          <input
+            name="Name"
+            type="text"
+            placeholder="Input your name"
+            maxlength="30"
+            required
+          />
+          <input
+            name="Email"
+            type="email"
+            placeholder="Input your email"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Write your massege here"
+            maxlength="500"
+            required
+          ></textarea>
+          <small></small>
+          <button type="submit">Get in touch</button>
+        </form>
+      </section>
+    </div>
+    <script src="./javascript/script.js"></script>
+    <script src="./javascript/validation.js"></script>
+  </body>
+</html>
