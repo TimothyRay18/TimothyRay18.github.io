@@ -258,7 +258,7 @@
               <a href="https://mail.google.com/mail/u/0/?fs=1&amp;to=timothy.ray1802@gmail.com&amp;tf=cm"><img src="./assets/icons8-gmail-24.png" alt="Gmail"/></a>
             </li>
           </ul>
-          <a href="https://drive.google.com/file/d/1KFwdiSHVFQGWGY9yA9Ug3cHKMwWco0MS/view?usp=sharing" class="btn btn-action">Get my resume</a>
+          <a href="https://drive.google.com/file/d/1KFwdiSHVFQGWGY9yA9Ug3cHKMwWco0MS/view?usp=sharingclass="btn btn-action">Get my resume</a>
         </div>
 
         <div id="about-myself-2">
@@ -266,9 +266,9 @@
             <li id="languages">
               <h4>
                 Languages
-                <img src="./assets/down.svg" alt="Arrow" />
+                <img src="./assets/down.svg" alt="Arrow" onclick="toggleList('languages')" />
               </h4>
-              <ul>
+              <ul id="languages-list">
                 <li>
                   <img src="./assets/js.png" alt="js" />
                   <h6>JavaScript</h6>
@@ -285,7 +285,6 @@
                   <img src="./assets/icons8-java-48.png" alt="java" />
                   <h6>Java</h6>
                 </li>
-                </li>
                 <li>
                   <img src="./assets/icons8-kotlin-48.png" alt="kotlin" />
                   <h6>Kotlin</h6>
@@ -298,27 +297,26 @@
                   <img src="./assets/icons8-python-48.png" alt="python" />
                   <h6>Python</h6>
                 </li>
-                </li>
                 <li>
                   <img src="./assets/icons8-golang-48.png" alt="golang" />
                   <h6>Golang</h6>
                 </li>
               </ul>
-            </li>
+            <!-- </li>
             <li id="frameworks">
               <h4>
                 Frameworks
                 <img src="./assets/down.svg" alt="Arrow" />
               </h4>
               <ul></ul>
-            </li>
-            <li id="skills">
+            </li> -->
+            <!-- <li id="skills">
               <h4>
                 Skills
                 <img src="./assets/down.svg" alt="Arrow" />
               </h4>
               <ul></ul>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -362,3 +360,10 @@
     <script src="./javascript/validation.js"></script>
   </body>
 </html>
+
+<script>
+function toggleList(sectionId) {
+  var listElement = document.getElementById(sectionId + '-list');
+  listElement.style.display = listElement.style.display === 'none' ? 'flex' : 'none';
+  }
+</script> 
