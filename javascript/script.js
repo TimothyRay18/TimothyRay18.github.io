@@ -38,32 +38,45 @@ const projectArray = [
     imgURL: './assets/Final Static Fashion.png',
     heading: 'Final Static Fashion',
     firstList: ['Full-Stack Dev', '2020'],
-    text: 'An e-commerce app that sells a wide variety of fashion attributes',
+    text: 'We are working on an innovative e-commerce application offering a diverse selection of fashion products and attributes. Our platform aims to provide customers with a seamless shopping experience while exploring a wide range of trendy and stylish items.',
     secList: ['Java SWing'],
+    source: 'https://github.com/TimothyRay18/FinalStaticFashion',
   },
   {
     id: 1,
     imgURL: './assets/Grimoire.png',
     heading: 'Grimoire',
     firstList: ['Full-Stack Dev', '2020'],
-    text: 'Grimoire is a note taking app with the ability to mix other media to be noted (audio, image, file).',
+    text: 'Introducing Grimoire, a versatile note-taking app that goes beyond traditional text input. With Grimoire, users can seamlessly capture and combine various media types, including audio, images, and files, to create comprehensive and multimedia-rich notes.',
     secList: ['Kotlin', 'Java'],
+    source: 'https://github.com/TimothyRay18/Grimoire',
   },
   {
     id: 2,
     imgURL: './assets/Foodut.png',
     heading: 'Foodut',
-    firstList: ['Back End Developer', '2022'],
-    text: 'Buy and sell a variety of delicious snack with ease. Connect with snack enthusiasts and satisfy your cravings. This app using Golang for the backend and Vue.js for the frontend.',
+    firstList: ['Backend Developer', '2022'],
+    text: 'Experience the ultimate convenience in buying and selling delectable snacks through our platform. Connect with fellow snack enthusiasts and indulge in your cravings like never before. Our app boasts a robust backend powered by Golang and a dynamic frontend designed with Vue.js, ensuring a seamless and delightful snacking journey for all users.',
     secList: ['HTML', 'Vue.js', 'Golang', 'JavaScripts'],
+    soruce: 'https://github.com/TimothyRay18/Foodut',
   },
   {
     id: 3,
+    imgURL: './assets/Sentiment analysis.png',
+    heading: 'Twitter Sentiment Analysis',
+    firstList: ['Full-Stack Dev', '2022'],
+    text: 'To enhance our understanding of sentiment analysis, we endeavor to develop a proficient model that accurately assesses the sentiment surrounding the term \'Jokowi\' as utilized on the Twitter platform. Through this project, we aim to gain valuable insights into public perception and sentiment regarding this subject.',
+    secList: ['HTML', 'Python', 'Tensorflow', 'JavaScript'],
+    source: 'https://github.com/TimothyRay18/Cryptocurrency-Forecasting-V2',
+  },
+  {
+    id: 4,
     imgURL: './assets/mainGUI.png',
     heading: 'Cryptocurrency Forecasting',
-    firstList: ['Full-Stack Dev', '2020'],
-    text: 'A website that forecasts cryptocurrency closing price using 25 hour of historical data.',
+    firstList: ['Full-Stack Dev', '2023'],
+    text: 'We present a cutting-edge website that leverages the power of Tensorflow to forecast cryptocurrency closing prices. By analyzing 25 hours of historical data, our platform provides accurate predictions, empowering users with valuable insights into the volatile crypto market. Stay ahead of the curve and make informed decisions with our advanced forecasting technology that brings data-driven intelligence to your fingertips.',
     secList: ['HTML', 'Python', 'Tensorflow', 'JavaScript'],
+    source: 'https://github.com/TimothyRay18/Cryptocurrency-Forecasting-V2',
   },
 ];
 
@@ -76,13 +89,14 @@ closePopup.addEventListener('click', () => {
 });
 
 const makePopup = ({
-  imgURL, heading, firstList, text, secList,
+  imgURL, heading, firstList, text, secList, source
 }) => {
   const pHead = document.querySelector('#popup-head > h2');
   const P1List = document.querySelectorAll('#pop-up ul > li');
   const PImg = document.querySelector('#popup-img > img');
   const PText = document.querySelector('#popup-details > p');
   const P2List = document.querySelector('#popup-details menu');
+  const PSource = document.querySelector('#popup-demo > a')
 
   pHead.innerHTML = heading;
   PText.innerHTML = text;
@@ -94,6 +108,7 @@ const makePopup = ({
     listItem.innerHTML = ele;
     P2List.appendChild(listItem);
   });
+  PSource.setAttribute('href', source);
   PopUp.classList.toggle('hidden');
 };
 
