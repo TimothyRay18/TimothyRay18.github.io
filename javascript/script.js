@@ -78,6 +78,15 @@ const projectArray = [
     secList: ['HTML', 'Python', 'Tensorflow', 'JavaScript'],
     source: 'https://github.com/TimothyRay18/Cryptocurrency-Forecasting-V2',
   },
+  {
+    id: 5,
+    imgURL: './assets/mascot2.png',
+    heading: 'Mascot',
+    firstList: ['Full-Stack Dev', '2023'],
+    text: 'Customer focus is one of most important principal in Bank Central Asia, Mascot will become an app that can improve the service to the customer. With this application, we can know the important data like dates, historical chat, BCA ID, and CIS of a customer in one page',
+    secList: ['HTML', 'ReactJS', 'Spring Boot'],
+    source: 'https://github.com/TimothyRay18/Mascot',
+  },
 ];
 
 const closePopup = document.querySelector('#popup-head > span');
